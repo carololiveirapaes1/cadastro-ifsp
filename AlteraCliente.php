@@ -15,7 +15,7 @@
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            background-color: #f4f4f4;
+            background-color: #f0d4fc;
             padding: 20px;
             text-align: center; /* Centraliza todo o conteúdo na horizontal */
         }
@@ -39,7 +39,7 @@
         legend {
             font-size: 1.5em;
             font-weight: bold;
-            color: #007bff; /* Azul */
+            color: #7305bd; /* Azul */
             margin-bottom: 10px;
         }
 
@@ -70,12 +70,12 @@
         input[type="password"]:focus,
         input[type="number"]:focus,
         select:focus {
-            border-color: #007bff; /* Azul ao focar */
+            border-color: #7305bd; /* Azul ao focar */
         }
 
         button {
             padding: 12px 24px;
-            background-color: #007bff; /* Azul */
+            background-color: #7305bd; /* Azul */
             color: #fff;
             border: none;
             border-radius: 4px;
@@ -85,7 +85,7 @@
         }
 
         button:hover {
-            background-color: #0056b3; /* Azul mais escuro ao passar o mouse */
+            background-color: #7305bd; /* Azul mais escuro ao passar o mouse */
         }
 
         .btn-container {

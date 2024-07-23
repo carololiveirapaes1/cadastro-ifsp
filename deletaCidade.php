@@ -8,7 +8,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0; /* Cinza claro de fundo */
+            background-color:  #f0d4fc; /* Cinza claro de fundo */
             color: #333; /* Cor do texto */
             margin: 0;
             padding: 20px;
@@ -45,7 +45,7 @@
             color: white;
         }
         .btn {
-            background-color: #2196F3; /* Azul */
+            background-color: #7305bd; /* Azul */
             color: white;
             padding: 10px 20px;
             border: none;
@@ -56,7 +56,7 @@
             margin-top: 20px;
         }
         .btn:hover {
-            background-color: #0b7dda; /* Azul mais escuro ao passar o mouse */
+            background-color: #7305bd; /* Azul mais escuro ao passar o mouse */
         }
     </style>
 </head>

@@ -22,7 +22,7 @@
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            background-color: #f4f4f4;
+            background-color:  #f0d4fc;
             padding: 20px;
             text-align: center; /* Centraliza todo o conteúdo na horizontal */
         }
@@ -71,7 +71,7 @@
 
         button {
             padding: 10px 20px;
-            background-color: #007bff;
+            background-color: #7305bd;
             color: #fff;
             border: none;
             border-radius: 4px;
@@ -80,7 +80,7 @@
         }
 
         button:hover {
-            background-color: #0056b3;
+            background-color: #7305bd;
         }
 
         .btn-container {

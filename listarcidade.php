@@ -15,7 +15,7 @@
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            background-color: #f9f9f9;
+            background-color: #f0d4fc;
             padding: 20px;
         }
 
@@ -31,13 +31,13 @@
             margin-right: 10px;
             text-decoration: none;
             color: #fff;
-            background-color: #007bff;
+            background-color: #7305bd;
             border-radius: 4px;
             transition: background-color 0.3s ease;
         }
 
         .btn:hover {
-            background-color: #0056b3;
+            background-color: #7305bd;
         }
 
         table {
@@ -55,7 +55,7 @@
         }
 
         th {
-            background-color: #007bff;
+            background-color: #7305bd;
             color: #fff;
         }
 
