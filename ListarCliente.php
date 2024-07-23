@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listar Cidades</title>
+    <title>Listar Clientes</title>
     <style>
         * {
             margin: 0;
@@ -67,20 +67,21 @@
 <body>
     <?php
         include('includes/conexao.php');
-        $sql = "SELECT * FROM Cidade";
+        $sql = "SELECT * FROM Cliente";
         //Executa a consulta
         $result = mysqli_query($con, $sql);
     ?>
     <h1>Consulta de Cidades</h1>
     <div style="text-align: center; margin-bottom: 20px;">
-        <a href="CadastroCidade.html" class="btn">Cadastrar Nova Cidade</a>
+        <a href="CadastroCliente.html" class="btn">Cadastrar Cliente</a>
         <a href="index.html" class="btn">Voltar à página inicial</a>
     </div>
     <table align="center" border="1">
         <tr>
             <th>Código</th>
             <th>Nome</th>
-            <th>Estado</th>
+            <th>Email</th>
+            <th>Senha</th>
             <th>Alterar</th>
             <th>Deletar</th>
         </tr>
@@ -90,9 +91,10 @@
                 echo "<tr>";
                 echo "<td>".$row['id']."</td>";
                 echo "<td>".$row['nome']."</td>";
-                echo "<td>".$row['estado']."</td>";
-                echo "<td><a href='alteraCidade.php?id=".$row['id']."'>Alterar</a></td>";
-                echo "<td><a href='deletaCidade.php?id=".$row['id']."'>Deletar</a></td>";
+                echo "<td>".$row['email']."</td>";
+                echo "<td>".$row['senha']."</td>";
+                echo "<td><a href='alteraCliente.php?id=".$row['id']."'>Alterar</a></td>";
+                echo "<td><a href='deletaCliente.php?id=".$row['id']."'>Deletar</a></td>";
                 echo "</tr>";
             }
         ?>

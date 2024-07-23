@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro Cidade</title>
+    <title>Cadastro Cliente</title>
     <style>
         * {
             margin: 0;
@@ -61,18 +61,20 @@
     </style>
 </head>
 <body>
-    <div class="container">
+<div class="container">
         <?php
             include('includes/conexao.php');
             $nome = $_POST['nome'];
-            $estado = $_POST['estado'];
+            $email = $_POST['email'];
+            $senha = $_POST['senha'];
 
-            echo "<h1>Dados da Cidade</h1>";
+            echo "<h1>Dados dos Clientes</h1>";
             echo "Nome: $nome<br>";
-            echo "Estado: $estado<br>";
+            echo "Email: $email<br>";
+            echo "Senha: $senha<br>";
 
             // Monta a query SQL para inserir os dados na tabela
-            $sql = "INSERT INTO Cidade (nome, estado) VALUES ('$nome', '$estado')";
+            $sql = "INSERT INTO Cliente (nome, email, senha) VALUES ('$nome', '$email', '$senha')";
 
             // Executa a query no banco de dados
             $result = mysqli_query($con, $sql);
@@ -89,7 +91,7 @@
             mysqli_close($con);
         ?>
         <a href="index.html" class="btn">Voltar à página inicial</a>
-        <a href="CadastroCidade.html" class="btn">Cadastrar outra cidade</a>
+        <a href="CadastroCliente.html" class="btn">Cadastrar outro cliente</a>
     </div>
 </body>
 </html>
